@@ -1,3 +1,4 @@
+"use strict";
 var switch_type1 = document.querySelector('.type1'),
     switch_type2 = document.querySelector('.type2'),
     switch_type3 = document.querySelector('.type3'),
