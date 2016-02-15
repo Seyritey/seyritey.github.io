@@ -1427,10 +1427,13 @@ footer {
     cursor: pointer
 }
 
+<<<<<<< HEAD
 .breadcrumbs span:last-child:hover {
     cursor: default;
 }
 
+=======
+>>>>>>> origin/master
 .share-model {
     margin-top: 52px;
     float: right;
@@ -2144,6 +2147,7 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
+<<<<<<< HEAD
 }
 
 
@@ -2381,4 +2385,6 @@ footer {
     width: 30.93%;
     float: right;
     margin-left: 6px;
+=======
+>>>>>>> origin/master
 }
