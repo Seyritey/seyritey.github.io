@@ -1040,6 +1040,8 @@ body {
 .brands_line {
     border: 2px solid #dcdcdc;
     margin-top: 43px;
+    margin-left: 15px;
+    box-sizing: border-box;
 }
 
 
@@ -1427,13 +1429,10 @@ footer {
     cursor: pointer
 }
 
-<<<<<<< HEAD
 .breadcrumbs span:last-child:hover {
     cursor: default;
 }
 
-=======
->>>>>>> origin/master
 .share-model {
     margin-top: 52px;
     float: right;
@@ -1880,7 +1879,7 @@ footer {
     font-style: normal;
 }
 
-.blue-delivery-zone .select-box {
+.select-box {
     display: inline-block;
     width: 65%;
     max-width: 320px;
@@ -1890,7 +1889,7 @@ footer {
     position: relative
 }
 
-.blue-delivery-zone .select-box:before {
+.select-box:before {
     position: absolute;
     content: " ";
     display: block;
@@ -1901,13 +1900,14 @@ footer {
     background: url(arrow_btn.png) center no-repeat;
 }
 
-.blue-delivery-zone .select-box select {
+.select-box select {
     padding-left: 12px;
     text-align: left;
     box-sizing: border-box;
     border: 0px;
     border-radius: 2px;
-    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3) inset;
+    /*box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3) inset; */
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2) inset;
     color: black;
     width: 100%;
     height: 30px;
@@ -1921,17 +1921,17 @@ footer {
     font-style: normal;
 }
 
-.blue-delivery-zone .select-box select:hover {
+.select-box select:hover {
     cursor: pointer;
 }
 
-.blue-delivery-zone .select-box select option {
+.select-box select option {
     padding: 5px 12px 5px 12px;
     height: 30px;
     line-height: 30px;
 }
 
-.blue-delivery-zone .select-box select option:checked {
+.select-box select option:checked {
     box-sizing: border-box;
     opacity: 0.8;
 }
@@ -2147,7 +2147,6 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-<<<<<<< HEAD
 }
 
 
@@ -2168,7 +2167,7 @@ footer {
     color: rgba(18, 68, 128, .5)
 }
 
-.customer-info-page .title {
+.customer-info-page .title{
     margin: 21px auto 0 auto;
     font-size: 36px;
     color: #124480;
@@ -2219,7 +2218,7 @@ footer {
     line-height: 45px;
 }
 
-.info-box .question {
+.info-box .question, .info-box2 .question {
     color: #124480;
     line-height: 45px;
     position: relative;
@@ -2240,13 +2239,13 @@ footer {
     left: -9px;
 }
 
-.info-box .answer {
+.info-box .answer, .info-box2 .answer {
     float: right;
     width: 70.01%;
     text-align: left;
 }
 
-.info-box .answer input[type='text'] {
+.info-box .answer input[type='text'],.info-box2 .answer input[type='text'] {
     width: 100%;
     height: 30px;
     line-height: 30px;
@@ -2260,7 +2259,7 @@ footer {
     
 }
 
-.info-box .answer input[type='text']:placeholder {
+.info-box .answer input[type='text']:placeholder,.info-box2 .answer input[type='text']:placeholder {
     color: rgba(25,25,25,0.5)
 }
 
@@ -2271,7 +2270,7 @@ footer {
     line-height: 24px;
 }
 
-.info-box label {
+.info-box label, .info-box2 label {
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -2281,12 +2280,12 @@ footer {
     
 }
 
-.info-box input[type=radio], .info-box input[type=checkbox] {
+.info-box input[type=radio], .info-box input[type=checkbox], .info-box2 input[type=radio], .info-box2 input[type=checkbox] {
     display: none;
     
 }
 
-.info-box label:before {
+.info-box label:before, .info-box2 label:before {
     content: "";
     display: inline-block;
  
@@ -2302,12 +2301,12 @@ footer {
     
 }
 
-.info-box .answer label:before, .payment label:before {
+.info-box .answer label:before, .payment label:before, .info-box2 .answer label:before{
     border-radius: 12px;
 }
 
 
-.info-box input[type=radio]:checked +label:before {
+.info-box input[type=radio]:checked +label:before, .info-box2 input[type=radio]:checked +label:before {
     content: "\2022";
     color: #ffe451;
     font-size: 50px;
@@ -2320,7 +2319,7 @@ footer {
     margin-left: 11px;
 }
 
-.terms span {
+.terms span, .options-box span {
     color: #124480;
     border-bottom: 1px dotted #124480;
     line-height: 15px;
@@ -2331,16 +2330,16 @@ footer {
     display: inline-block;
 }
 
-.terms span:hover {
+.terms span:hover:; {
     cursor: pointer;
 }
 
-.terms label {
+.terms label, .options-box label {
     margin-right: 0px;
 }
 
 
-.info-box input[type=checkbox]:checked +label:before {
+.info-box input[type=checkbox]:checked +label:before, .info-box2 input[type=checkbox]:checked +label:before {
     transition: 0.15s all;
     content: "✓";
     color: #124480;
@@ -2385,6 +2384,95 @@ footer {
     width: 30.93%;
     float: right;
     margin-left: 6px;
-=======
->>>>>>> origin/master
+}
+
+
+/* page 6 - customer info end */
+
+/* page 7 - personalized model start */
+
+.personalized-model-page .title {
+    margin: 21px auto 0 auto;
+    font-size: 36px;
+    color: #124480;
+    text-decoration: underline;
+    font-family: "STEM";
+    font-weight: bold;
+    text-align: center;
+}
+
+.personalized-model-page {
+    padding-right: 0;
+}
+
+.personalized-model-page .info-box2 {
+    display: inline-block;
+    width: 48.8%;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    
+}
+
+.info-box2:nth-child(even) {
+    margin-right: 2%;
+}
+
+.info-box2 {
+    padding: 0;
+}
+
+.personalized-model-page .info-box2 .head-text {
+    padding: 30px 0;
+    font-size: 18px;
+    color: #124480;
+    border-bottom: 1px solid #e2e2e2;
+    font-family: "STEM";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.info-box2 .question {
+    margin: 23px 0 0 25px;
+}
+
+.info-box2 select {
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1) inset;
+}
+
+.info-box2 .select-box {
+    margin-top: 32px;
+    margin-left: 0;
+}
+
+.info-box2 img {
+    border-radius: 3px;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+.options-box {
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+.options-box label {
+    margin-left: 70px;
+}
+
+.options-box span {
+    padding-top: 20px;
+    border-bottom: 0px;
+}
+
+.options-box div {
+    width: 49%;
+    display: inline-block;
+    height: 20px;
+}
+
+.options-box div:nth-child(even) label {
+    margin-left: 28px;
 }
